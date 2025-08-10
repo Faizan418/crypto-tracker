@@ -1,36 +1,104 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Crypto Tracker
 
-## Getting Started
+A real-time cryptocurrency price tracking application built for the **HackVerse Hackathon** at KUBS, University of Karachi. This project allows users to monitor live prices, view historical data, and search for their favorite cryptocurrencies in a clean, modern interface.
 
-First, run the development server:
+### Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+* **Live Price Updates:** Fetches and displays real-time prices for multiple cryptocurrencies from the CoinGecko API.
+* **Interactive Area Charts:** Each cryptocurrency card includes a filled-in area chart showing price trends over the last 24 hours.
+* **24h Price Change:** Displays the percentage change in price over 24 hours with visual indicators.
+* **Search Functionality:** A search bar in the header allows users to filter cryptocurrencies by name.
+* **Dark/Light Mode:** A toggle button to switch between a sleek dark theme and a clean light theme.
+* **Responsive Design:** The application's UI is optimized for both desktop and mobile devices.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Technologies Used
+* **Next.js 15:** A React framework for building fast and scalable web applications.
+* **React:** For building the user interface.
+* **Tailwind CSS:** A utility-first CSS framework for rapid and consistent styling.
+* **Recharts:** A charting library for displaying the price trend graphs.
+* **CoinGecko API:** A powerful and free API used to fetch real-time and historical crypto data.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### Project Structure
+This project follows a well-organized structure to separate concerns and ensure maintainability.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+Haan bhai, bilkul. Ek achhi README.md file banana bahut zaruri hai. Isse tumhara project professional lagega aur sabko samajh aa jayega ke tumne kya banaya hai.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Yeh lo ek complete README.md file ka content. Tum bas isse README.md naam ki file mein copy-paste kar sakte ho aur apni details add kar sakte ho.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Markdown
 
-## Deploy on Vercel
+# Crypto Tracker
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+A real-time cryptocurrency price tracking application built for the **HackVerse Hackathon** at KUBS, University of Karachi. This project allows users to monitor live prices, view historical data, and search for their favorite cryptocurrencies in a clean, modern interface.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Features
+* **Live Price Updates:** Fetches and displays real-time prices for multiple cryptocurrencies from the CoinGecko API.
+
+* **Interactive Area Charts:** Each cryptocurrency card includes a filled-in area chart showing price trends over the last 24 hours.
+
+* **24h Price Change:** Displays the percentage change in price over 24 hours with visual indicators.
+* **Search Functionality:** A search bar in the header allows users to filter cryptocurrencies by name.
+* **Dark/Light Mode:** A toggle button to switch between a sleek dark theme and a clean light theme.
+* **Responsive Design:** The application's UI is optimized for both desktop and mobile devices.
+
+### Technologies Used
+* **Next.js 15:** A React framework for building fast and scalable web applications.
+* **React:** For building the user interface.
+* **Tailwind CSS:** A utility-first CSS framework for rapid and consistent styling.
+* **Recharts:** A charting library for displaying the price trend graphs.
+* **CoinGecko API:** A powerful and free API used to fetch real-time and historical crypto data.
+
+### Project Structure
+This project follows a well-organized structure to separate concerns and ensure maintainability.
+
+
+/crypto-tracker
+├── app/
+│   ├── layout.js              # Main app layout and ThemeProvider
+│   └── page.js                # Main homepage component with all logic
+├── components/
+│   ├── CryptoCard.js          # Reusable component for each crypto's card
+│   ├── Header.js              # The app's header with search and theme toggle
+│   ├── loading.jsx            # Loading spinner component
+│   └── ThemeContext.js        # React Context for managing themes
+├── lib/
+│   └── cryptoApi.js           # Functions for fetching data from the API
+├── public/                    # Static assets like images
+├── styles/
+│   └── globals.css            # Global Tailwind and base styles
+├── .env.local                 # Environment variables (API URLs)
+└── package.json               # Project dependencies and scripts
+
+
+### Getting Started
+Follow these steps to set up and run the project locally.
+
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/Faizan418/crypto-tracker
+    cd crypto-tracker
+    ```
+
+2.  **Install dependencies:**
+    ```bash
+    npm install
+    ```
+
+3.  **Set up environment variables:**
+    Create a file named `.env.local` in the root of your project and add the following API URLs:
+    ```
+    NEXT_PUBLIC_COINGECKO_API_URL=[https://api.coingecko.com/api/v3/simple/price?ids=bitcoin,ethereum,dogecoin,shiba-inu,solana,cardano&vs_currencies=usd,pkr&include_24hr_change=true](https://api.coingecko.com/api/v3/simple/price?ids=bitcoin,ethereum,dogecoin,shiba-inu,solana,cardano&vs_currencies=usd,pkr&include_24hr_change=true)
+    NEXT_PUBLIC_COINGECKO_HISTORICAL_API_URL=[https://api.coingecko.com/api/v3/coins/](https://api.coingecko.com/api/v3/coins/)
+    ```
+
+4.  **Run the development server:**
+    ```bash
+    npm run dev
+    ```
+    The application will be available at `http://localhost:3000`.
+
+### Contact
+* **Name:** Muhammad Faizan
+* **Email:** muhammadf4060@gmail.com
