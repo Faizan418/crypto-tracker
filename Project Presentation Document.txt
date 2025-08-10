@@ -1,0 +1,56 @@
+Project Presentation Document
+
+
+Slide 1: Introduction
+
+(Title): Crypto Tracker
+(Short Intro): "Assalamu Alaikum, mera naam Muhammad Faizan hai aur yeh hai mera project, Crypto Tracker. Maine yeh project HackVerse event ke liye banaya hai, jo live cryptocurrency prices track karta hai."
+
+Slide 2: Masla aur Hal (Problem & Solution)
+
+(Problem): "Aaj ke daur mein, cryptocurrencies ki prices har second change hoti rehti hain. Ek aam insaan ke liye in prices ko track karna mushkil hai."
+(Solution): "Mera project Crypto Tracker is masle ko hal karta hai. Yeh ek modern aur simple platform hai jo real-time mein cryptocurrency ki prices aur unka trend dikhata hai."
+
+
+Slide 3: Project ki Main Features
+
+"Mere project mein kuch khaas features hain:"
+
+Live Price Tracker: "Yeh website CoinGecko API se live data fetch karti hai, jisse aapko har second update milta hai."
+
+Interactive Area Charts: "Har coin ke card par ek chart hai jo pichle 24 ghante ka price trend dikhata hai. Yeh chart bilkul live update hota hai."
+
+Search Bar: "Top par ek search bar hai jisse aap apni pasand ki cryptocurrency ko aasani se dhoond sakte hain."
+
+Dark/Light Mode: "Aap ek button dabakar website ka theme dark se light kar sakte hain, jo user experience ko behtar banata hai."
+
+Professional UI: "Website ka design clean, modern aur responsive hai, jo desktop aur mobile dono par achha lagta hai."
+
+
+Slide 4: Yeh Kaise Kaam Karta Hai?
+
+"Is project ke peeche ka logic simple hai:"
+
+Data Fetching: "Website useEffect hook ka istemal karke CoinGecko API se data fetch karti hai."
+
+Auto-Update: "Humne setInterval function use kiya hai, jisse har 1 second mein data dobara fetch hota hai aur prices khud-ba-khud update ho jaati hain."
+
+Data Display: "Jo data fetch hota hai, use website par CryptoCard components mein dikhaya jaata hai, jismein price aur chart dono shamil hain."
+
+
+Slide 5: Technologies Jo Maine Use Ki Hain
+
+"Maine is project ko banane ke liye in technologies ka istemal kiya hai:"
+
+Next.js: Poori website is framework par bani hai.
+
+Tailwind CSS: Styling aur UI ke liye use kiya hai.
+
+Recharts: Charts banane ke liye yeh library use ki hai.
+
+CoinGecko API: Live crypto data ke liye yeh API use ki hai.
+
+
+Slide 6: Conclusion
+
+"Aakhir mein, mera project ek simple, effective, aur modern solution hai live crypto prices track karne ke liye. Yeh HackVerse event ke liye perfect hai."

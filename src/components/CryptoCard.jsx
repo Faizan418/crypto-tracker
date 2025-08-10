@@ -56,6 +56,15 @@ export default function CryptoCard({
         </div>
       </div>
       <p className="text-3xl font-bold mb-1">USD: ${priceUSD}</p>
+      {pricePKR && (
+        <p
+          className={`text-lg mb-4 ${
+            theme === "dark" ? "text-gray-400" : "text-gray-600"
+          }`}
+        >
+          PKR: Rs. {pricePKR}
+        </p>
+      )}
       <div className="flex items-center gap-2 mt-2 mb-4">
         <p className={`font-bold text-lg ${changeColorClass}`}>
           <span className="mr-1">{changeIcon}</span>
